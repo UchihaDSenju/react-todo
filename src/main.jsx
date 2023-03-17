@@ -5,7 +5,7 @@ import './index.css'
 import Input from './assets/inputField'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <div className='container'>
     <Input />
-  </React.StrictMode>,
+  </div>
 )
