@@ -17,7 +17,8 @@
 *{
   margin: 0;
   padding: 0;
-  text-decoration: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body{
@@ -40,4 +41,17 @@ body{
   height: 1cm;
   margin-left: 5px;
   padding: 5px;
+}
+.todoItem{
+  display: flex;
+  justify-content: space-between;
+  width: 429px;
+  margin: 0px auto;
+  font-size: larger;
+  background-color: aliceblue;
+  padding: 3px;
+  border-radius: 5px;
+}
+.todoListContainer{
+  margin-top: 5px;
 }
