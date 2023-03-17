@@ -59,7 +59,7 @@ body{
   background-color: aliceblue;
   padding: 3px;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 span{
