@@ -29,6 +29,8 @@ body{
   margin-top: 150px;
 }
 .inputContainer{
+  display: flex;
+  flex-direction: column;
   width: fit-content;
   margin: 0px auto;
 }
@@ -41,23 +43,30 @@ body{
 }
 .inputContainer button{
   height: 1cm;
-  margin-left: 5px;
   padding: 5px;
   border-radius: 5px;
+}
+.addBtn{
+  margin-left: 5px;
 }
 .inputContainer button:hover{
   cursor: pointer;
   background-color: rgb(185, 181, 181);
 }
+.clearBtn{
+  margin-top: 5px;
+  margin-right: 0.5px;
+}
 .todoItem{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 429px;
+  width: 420px;
   margin: 0px auto;
   font-size: larger;
   background-color: aliceblue;
   padding: 3px;
+  height: 0.7cm;
   border-radius: 5px;
   overflow: hidden;
 

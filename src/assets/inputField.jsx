@@ -14,23 +14,29 @@ function inputField(props) {
 
   return (
     <div className='inputContainer'>
-      <input 
-      autoFocus
-      type="text" 
-      placeholder='Enter a ToDo'
-      value={inputText}
-      onChange={e => {
-        console.log(e);
-        setInputText(e.target.value) //Stores in input text
-      }}
-      onKeyUp={(e) => {
-        if(e.key == "Enter"){
+      <div>
+        <input 
+        autoFocus
+        type="text" 
+        placeholder='Enter a ToDo'
+        value={inputText}
+        onChange={e => {
+          console.log(e);
+          setInputText(e.target.value) //Stores in input text
+        }}
+        onKeyUp={(e) => {
+          if(e.key == "Enter"){
+            todoExecute()
+          }
+        }}></input>
+        <button className='addBtn' onClick={() => {
           todoExecute()
-        }
-      }}></input>
-      <button onClick={() => {
-        todoExecute()
-      }}>Add ToDo</button>
+        }}>Add ToDo</button>
+      </div>
+      <button className='clearBtn' onClick={() => {
+        localStorage.clear();
+        window.location.reload();
+      }}>Clear all</button>
     </div>
   )
 }
