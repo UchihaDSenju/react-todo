@@ -36,6 +36,12 @@ body{
   border-radius: 5px;
   width: fit-content;
 }
+.container button{
+  border: none;
+  background-color: rgb(249, 189, 116);
+  padding: 10px;
+  border-radius: 2px;
+}
 .inputContainer{
   display: flex;
   flex-direction: column;
