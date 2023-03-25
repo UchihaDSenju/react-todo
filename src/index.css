@@ -93,6 +93,7 @@ span{
   word-break: break-all;
   text-align: left;
   width: 100%;
+  cursor: pointer;
 }
 span.done{
   text-decoration: line-through;
