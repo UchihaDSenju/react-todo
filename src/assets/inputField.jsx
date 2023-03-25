@@ -14,7 +14,7 @@ function inputField(props) {
 
   return (
     <div className='inputContainer'>
-      <div>
+      <div id='input'>
         <input 
         autoFocus
         type="text" 

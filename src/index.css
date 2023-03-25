@@ -23,10 +23,18 @@
 
 body{
   min-height: 100vh;
-  background-color: #242424;
+  background-color: rgb(249, 182, 101);
+  display: flex;
+  align-items: center;
 }
 .container{
-  margin-top: 150px;
+  background-color: bisque;
+  width: fit-content;
+  margin: 0px auto;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  width: fit-content;
 }
 .inputContainer{
   display: flex;
@@ -45,6 +53,10 @@ body{
   height: 1cm;
   padding: 5px;
   border-radius: 5px;
+}
+#input{
+  display: flex;
+  flex-direction: row;
 }
 .addBtn{
   margin-left: 5px;
@@ -74,6 +86,10 @@ body{
 span{
   word-break: break-all;
   text-align: left;
+  width: 100%;
+}
+span.done{
+  text-decoration: line-through;
 }
 .todoListContainer{
   margin-top: 5px;
