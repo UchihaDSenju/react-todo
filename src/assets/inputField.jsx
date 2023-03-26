@@ -1,14 +1,17 @@
 import React, {useState} from 'react'
+import toastr from 'toastr'
+
 
 function inputField(props) {
   const [inputText, setInputText] = useState(() => '') // first is the state second parameter is a function that changes the state
 
   const todoExecute = () => {
     if(inputText.trim() == ""){
-      alert("Enter a Todo")
+      toastr["warning"]("Please Enter a Todo")
       return
     }
     props.addListProps(inputText)
+    toastr["success"]("To-Do Added Successfully")
     setInputText("")
   }
 
@@ -35,7 +38,8 @@ function inputField(props) {
       </div>
       <button className='clearBtn' onClick={() => {
         localStorage.clear();
-        window.location.reload();
+        toastr["info"]("To-Do Cleared Successfully")
+        setTimeout(() => window.location.reload(), 1000);
       }}>Clear all</button>
     </div>
   )

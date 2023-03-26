@@ -36,12 +36,6 @@ body{
   border-radius: 5px;
   width: fit-content;
 }
-.container button{
-  border: none;
-  background-color: rgb(249, 189, 116);
-  padding: 10px;
-  border-radius: 2px;
-}
 .inputContainer{
   display: flex;
   flex-direction: column;
@@ -56,9 +50,19 @@ body{
   padding: 5px;
 }
 .inputContainer button{
+  border: none;
+  background-color: rgb(249, 189, 116);
+  padding: 10px;
+  border-radius: 2px;
+}
+.inputContainer button{
   height: 1cm;
   padding: 5px;
   border-radius: 5px;
+}
+.inputContainer button:hover{
+  cursor: pointer;
+  background-color: rgb(212, 130, 29);
 }
 #input{
   display: flex;
@@ -66,10 +70,6 @@ body{
 }
 .addBtn{
   margin-left: 5px;
-}
-.inputContainer button:hover{
-  cursor: pointer;
-  background-color: rgb(185, 181, 181);
 }
 .clearBtn{
   margin-top: 5px;
