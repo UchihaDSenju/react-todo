@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Input from './inputField'
 import List from './listItem'
 
 function todoList() {
 
-    const [todoList, setTodoList] = useState(() => {
+    let [todoList, setTodoList] = useState(() => []);
+
+    useEffect(() => {
       if(localStorage.getItem('todo')){
-        return localStorage.getItem('todo').split(',');
+        setTodoList(localStorage.getItem('todo').split(','));
       }
-      return [];
-    });
+    }, []);
 
     const addList = (inputValue) => {
         setTodoList([...todoList, inputValue]);

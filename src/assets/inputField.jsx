@@ -24,7 +24,6 @@ function inputField(props) {
         placeholder='Enter a ToDo'
         value={inputText}
         onChange={e => {
-          console.log(e);
           setInputText(e.target.value) //Stores in input text
         }}
         onKeyUp={(e) => {
@@ -36,13 +35,18 @@ function inputField(props) {
           todoExecute()
         }}>Add ToDo</button>
       </div>
-      <button className='clearBtn' onClick={() => {
+      <button className='clearBtn' onClick={() => { // make it a function
         localStorage.clear();
         toastr["info"]("To-Do Cleared Successfully")
-        setTimeout(() => window.location.reload(), 1000);
+        setTimeout(() => window.location.reload(), 500);
       }}>Clear all</button>
     </div>
   )
 }
 
 export default inputField
+
+// vite with typescript (learn it)
+// how they work in react in optimised way
+// react + typescript Study
+// useEffect()
